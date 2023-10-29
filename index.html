@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Andy Villanueva Valencia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+        .section-content {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var content = document.getElementById(sectionId + "-content");
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
+    <h1>Andy Villanueva Valencia</h1>
 
-<h1 style="color :red;">Andy Villanueva Valencia</h1>
-<h2>Mi descripción:</h2>
-<p>Mi nombre es Andy Jeferson Villanueva Valencia, soy estudiante de 
-    <a href= "https://cs.ucsp.edu.pe/"> 
-    ciencia de la computación
-    </a>
-    en la Universidad Catolica San Pablo, actualmente voy en 2do semestre.Tengo 17 años y mido 1.82 cm. Soy una persona con muchas pasiones y metas que cumplir asi tambien una persona que trata de mejorar y sacar la mejor version de si mismo.Entre a la carrera de ciencia de la computación ya que desde pequeño siempre me apasionó todo el tema de las computadoras, como piensan , como funcionan por dentro , cual es su lenguaje,entre otros y ahora puedo decir que no pude haber entrado a mejor carrera para lo que es mi gusto personal  </p>
-<h3>Mis metas:</h3>
-<p>Mis principales metas son: </p>
-<ul>
-    <li>Graduarme de licenciado en ciencia de la computación</li>
-    <li>Cumplir mi sueño de viajar fuera del país</li>
-    <li>Hacer sentir orgullosa a toda mi familia y a las personas que confiaron en mi</li>
-    <li>Llegar a desarrollar la mejor version de mi persona</li>
-</ul>
-<h4>Mi carrera:</h4>
-<p>En cuanto a mi carrera lo principal es que es una carrera en la que uno tiene que "Crear", en cuanto a mi parecer podría describirla como una carrera en la que se tiene que argumentar muchas cosas ya que mas que todo se basa en la practica y en tener una buena capacidad analitica para así usarla tanto de codigos en lenguajes de programación como en diversos problemas de matematica tanto discreta y continua, en lo que llevo de progreso en la carrera pude descubrir muchas habilidades mias que en el pasado nisiquiera se me venía a la mente que las tuviera , eso fue lo que hasta dia de hoy me sigue motivando a continuar en la carrera  </p>
+    <section class="companion-links">
+        <h2 onclick="toggleSection('companion-links')">Páginas web de compañeros:</h2>
+        <div id="companion-links-content" class="section-content">
+            <ul>
+                <li><a href="https://mativan15.github.io/mativan15/">Ivan Sardon</a></li>
+                <li><a href="https://christianbrandon97.github.io/">Christian Quispe</a></li>
+                <li><a href="https://ericko0o.github.io/Ericko0o/">Erick Villacis</a></li>
+                <li><a href="https://diegoalejandrohidalgomachaca.000webhostapp.com/">Diego Hidalgo</a></li>
+            </ul>
+        </div>
+    </section>
 
-<img src="D:\jefer\Bellingham.jpg" width="700" height="1500">
+    <section class="description">
+        <h2 onclick="toggleSection('description')">Mi descripción:</h2>
+        <div id="description-content" class="section-content">
+            <p>Mi nombre es Andy Jeferson Villanueva Valencia, soy estudiante de
+                <a href="https://cs.ucsp.edu.pe/">ciencia de la computación</a>
+                en la Universidad Católica San Pablo. Actualmente voy en 2do semestre. Tengo 17 años y mido 1.82 cm. Soy una persona con muchas pasiones y metas que cumplir, así como una persona que trata de mejorar y sacar la mejor versión de sí mismo. Entré a la carrera de ciencia de la computación ya que desde pequeño siempre me apasionó todo el tema de las computadoras, como piensan, como funcionan por dentro, cuál es su lenguaje, entre otros y ahora puedo decir que no pude haber entrado a mejor carrera para lo que es mi gusto personal.</p>
+        </div>
+    </section>
+
+    <section class="goals">
+        <h2 onclick="toggleSection('goals')">Mis metas:</h2>
+        <div id="goals-content" class="section-content">
+            <ul>
+                <li>Graduarme de licenciado en ciencia de la computación</li>
+                <li>Cumplir mi sueño de viajar fuera del país</li>
+                <li>Hacer sentir orgullosa a toda mi familia y a las personas que confiaron en mí</li>
+                <li>Llegar a desarrollar la mejor versión de mi persona</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="career">
+        <h2 onclick="toggleSection('career')">Mi carrera:</h2>
+        <div id="career-content" class="section-content">
+            <p>En cuanto a mi carrera, lo principal es que es una carrera en la que uno tiene que "Crear", en cuanto a mi parecer podría describirla como una carrera en la que se tiene que argumentar muchas cosas ya que más que todo se basa en la práctica y en tener una buena capacidad analítica para así usarla tanto de códigos en lenguajes de programación como en diversos problemas de matemática, tanto discreta como continua, en lo que llevo de progreso en la carrera pude descubrir muchas habilidades mías que en el pasado ni siquiera se me venía a la mente que las tuviera, eso fue lo que hasta el día de hoy me sigue motivando a continuar en la carrera. Como lo dije anteriormente me encuentro al día de hoy en 2do semestre, en cuanto a mi experiencia puedo manifestar que es una carrera muy interesante, en la que se necesita usar mucho el cerebro para diversos aspectos.</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 onclick="toggleSection('projects')">Mis proyectos:</h2>
+        <div id="projects-content" class="section-content">
+            <p>Cuando estuve en primer semestre desarrolle un videojuego junto a mis compañeros de carrera. Este consistía en un juego de naves el cual contenía 5 niveles en los cuales debías esquivar obstáculos para al finalizar el nivel enfrentarte a un jefe final dependiendo de cada mapa.</p>
+        </div>
+    </section>
+
+    <section class="image">
+        <h2 onclick="toggleSection('image')">Mi imagen:</h2>
+        <div id="image-content" class="section-content">
+            <img src="D:\jefer\Mi foto.jpeg" width="500" height="1000">
+        </div>
+    </section>
 </body>
 </html>
